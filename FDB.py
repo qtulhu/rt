@@ -33,8 +33,8 @@ def db_form(data1):
     rectangles=data1['events'][0]['rectangles']
     cam_name='cam_10'
     right_hour=str(time_convert(hour))
-    time=(right_hour+minute+sec)
-    date=(day+month+year)
+    time=(right_hour+":"+minute+":"+sec)
+    date=(day+"."+month+"."+year)
     return(cam_name,TYPE,date,time,rectangles)
 
 print("Begin")
@@ -51,7 +51,7 @@ while(1==1):
         SENSOR_TYPE=str(db_form(data1)[1])
         DATE_EVENT=str(db_form(data1)[2])
         TIME_EVENT= str(db_form(data1)[3])
-        RECTANGLES=str(db_form(data1)[4])
+        RECTANGLES='0'
         DIRECTION='0'
         HULA_HOOP='0'
 
