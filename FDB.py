@@ -5,7 +5,7 @@ import urllib
 import queryToDB
 
 
-s=requests.get('http://chinas:chinas@video.irk.sibir.rt.ru/archive/events/detectors/AXXON-SERVER/DeviceIpint.41/SourceEndpoint.video:0:0/future/past?limit=1&type=oneLine')
+s=requests.get('http://user:user@addr.ru/archive/events/detectors/AXXON-SERVER/DeviceIpint.41/SourceEndpoint.video:0:0/future/past?limit=1&type=oneLine')
 data = s.json()
 
 length=len(data['events'])
@@ -41,7 +41,7 @@ print("Begin")
 event=data
 count=0
 while(1==1):
-    s=requests.get('http://chinas:chinas@video.irk.sibir.rt.ru/archive/events/detectors/AXXON-SERVER/DeviceIpint.41/SourceEndpoint.video:0:0/future/past?limit=1&type=oneLine')
+    s=requests.get('http://user:user@addr.ru.ru/archive/events/detectors/AXXON-SERVER/DeviceIpint.41/SourceEndpoint.video:0:0/future/past?limit=1&type=oneLine')
     data1 = s.json()
     if(event!=data1):
         count=count+1
